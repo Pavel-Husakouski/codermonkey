@@ -128,12 +128,6 @@ var langs = []Lang{
 			return append(mk(c), []string{"gcc", "-O2", "-std=gnu11", "-Wall", "-Wextra", "-o", c.out("bench-c"), c.src("bench.c"), "-lm"})
 		},
 		Run: func(c *Ctx) []string { return []string{c.out("bench-c")} }},
-	{Name: "cpp", Tool: "g++",
-		Version: func(c *Ctx) string { return ver("g++", "-dumpfullversion") },
-		Build: func(c *Ctx) [][]string {
-			return append(mk(c), []string{"g++", "-O2", "-std=c++20", "-Wall", "-Wextra", "-o", c.out("bench-cpp"), c.src("bench.cpp")})
-		},
-		Run: func(c *Ctx) []string { return []string{c.out("bench-cpp")} }},
 	{Name: "rust", Tool: "rustc",
 		Version: func(c *Ctx) string { return ver("rustc", "--version") },
 		Build: func(c *Ctx) [][]string {

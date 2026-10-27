@@ -31,7 +31,6 @@ These are microbenchmarks. They measure a few hot loops and one allocation-heavy
 | `cs` | C# / .NET | `Bench.cs` | `dotnet publish -c Release` |
 | `cs-opt` | C# / .NET, zero-cost abstractions (struct comparer and struct iterators as generic arguments) | `BenchOpt.cs` (quicksort only) | `dotnet publish -c Release` |
 | `c` | C (GCC) | `bench.c` | `gcc -O2 -std=gnu11` |
-| `cpp` | C++ (G++) | `bench.cpp` | `g++ -O2 -std=c++20` |
 | `rust` | Rust | `bench.rs` | `rustc -C opt-level=3` |
 | `zig` | Zig | `bench.zig` | `zig build-exe -O ReleaseFast` |
 | `swift` | Swift | `bench.swift` | `swiftc -O` |

@@ -4,7 +4,7 @@ iter := "100"
 node := "node"
 # benchmarks: all, or comma list of floyd,lcs,quicksort; example: just bench=floyd run
 bench := "all"
-# languages: all, or comma list (js,bun,deno,scriptc,go,java,cs,cs-opt,c,cpp,rust,zig,swift); example: just lang=go,rust run
+# languages: all, or comma list (js,bun,deno,scriptc,go,java,cs,cs-opt,c,rust,zig,swift); example: just lang=go,rust run
 lang := "all"
 
 # list recipes; example: just
